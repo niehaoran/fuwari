@@ -1,10 +1,10 @@
 ---
 title: 使用kubeasz一键安装k8s原生集群
-published: 2025-01-27
+published: 2025-08-27
 description: '详细介绍如何使用kubeasz工具部署高可用的Kubernetes原生集群'
-image: ''
+image: '/src/assets/images/k8s.png'
 tags: [kubernetes, k8s, kubeasz, 集群部署]
-category: '容器技术'
+category: 'k8s'
 draft: false
 lang: ''
 pinned: true
@@ -394,7 +394,7 @@ kubectl get componentstatuses
 
 ---
 
-通过以上步骤，你就可以成功部署一个高可用的Kubernetes原生集群了。记住在生产环境中使用时，要根据实际需求调整机器配置和网络规划。
+通过以上步骤，你就可以成功部署一个高可用的Kubernetes原生集群了。记住在生产环境中使用时，要根据实际需求调整机器配置和网络规划。 
 
 ## 参考项目
 

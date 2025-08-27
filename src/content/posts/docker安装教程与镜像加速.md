@@ -4,7 +4,7 @@ published: 2025-08-27
 description: ''
 image: ''
 tags: ["教程/转载"]
-category: '教程'
+category: 'docker'
 draft: false 
 lang: ''
 ---
