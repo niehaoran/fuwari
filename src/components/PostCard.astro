@@ -21,6 +21,7 @@ interface Props {
 	description: string;
 	draft: boolean;
 	style: string;
+	pinned?: boolean;
 }
 const {
 	entry,
@@ -33,6 +34,7 @@ const {
 	image,
 	description,
 	style,
+	pinned = false,
 } = Astro.props;
 const className = Astro.props.class;
 
@@ -52,6 +54,12 @@ const { remarkPluginFrontmatter } = await entry.render();
         before:absolute before:top-[35px] before:left-[18px] before:hidden md:before:block
         ">
             {title}
+            {pinned && (
+                <span class="inline-flex items-center ml-3 text-[var(--primary)] text-sm font-medium">
+                    <Icon name="material-symbols:push-pin" class="text-[1.1rem] mr-1 translate-y-[-1px]" />
+                    置顶
+                </span>
+            )}
             <Icon class="inline text-[2rem] text-[var(--primary)] md:hidden translate-y-0.5 absolute" name="material-symbols:chevron-right-rounded" ></Icon>
             <Icon class="text-[var(--primary)] text-[2rem] transition hidden md:inline absolute translate-y-0.5 opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0" name="material-symbols:chevron-right-rounded"></Icon>
         </a>
